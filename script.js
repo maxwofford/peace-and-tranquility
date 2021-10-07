@@ -37,7 +37,7 @@ document.querySelector('.begin').onclick = () => {
   setTimeout(() => {
     phraseBox.innerText = phrases[phraseIndex]
     setInterval(updatePhrase, 6000)
-  }, 1000)
+  }, 2000)
 }
 
 const updatePhrase = () => {

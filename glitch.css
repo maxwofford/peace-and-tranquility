@@ -32,7 +32,7 @@ text set in the data-text attribute. */
 .glitch {
   position: relative;
   color: white;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.1em;
   /* Animation provies a slight random skew. Check bottom of doc
   for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;

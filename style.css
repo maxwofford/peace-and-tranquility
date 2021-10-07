@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 body {
   background-color: #222;
   animation: none;
@@ -53,11 +55,15 @@ body {
 }
 
 .begin {
+  font-size: 2em;
+  font-family: 'VT323', monospace;
+  font-weight: bolder;
   text-align: center;
   cursor: pointer;
 }
 
 .phrase-box {
+  font-family: 'VT323', monospace;
   color: white;
   font-weight: bold;
   animation: transition-in ease-in-out 3s;
