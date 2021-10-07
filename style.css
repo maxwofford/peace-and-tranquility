@@ -30,6 +30,16 @@ body {
   }
 }
 
+/* From https://codepen.io/patrickhlauke/pen/YaoBop */
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
 .container {
   position: absolute;
   top: 0;
@@ -62,11 +72,18 @@ body {
   cursor: pointer;
 }
 
+.flicker-text {
+  animation-duration: 0.01s;
+  animation-name: textflicker;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .phrase-box {
   font-family: 'VT323', monospace;
   color: white;
   font-weight: bold;
-  animation: transition-in ease-in-out 3s;
+  /* animation: transition-in ease-in-out 3s; */
 }
 
 @media (max-width: 300px) {

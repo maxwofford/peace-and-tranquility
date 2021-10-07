@@ -31,6 +31,7 @@ document.querySelector('.begin').onclick = () => {
 
   const phraseBox = document.createElement('p')
   phraseBox.classList.add('phrase-box')
+  phraseBox.classList.add('flicker-text')
   document.querySelector('.container').appendChild(phraseBox)
   phraseBox.innerText = ' '
 
