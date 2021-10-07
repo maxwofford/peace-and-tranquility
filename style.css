@@ -48,7 +48,19 @@ body {
 .phrase-box {
   color: white;
   font-weight: bold;
-  font-size: 3em;
+  animation: transition-in ease-in-out 3s;
+}
+
+@media (max-width: 300px) {
+  .phrase-box { font-size: 1em; }
+}
+
+@media (min-width: 500px) {
+  .phrase-box { font-size: 2em; }
+}
+
+@media (min-width: 700px) {
+  .phrase-box { font-size: 3em; }
 }
 
 img {
