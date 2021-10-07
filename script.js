@@ -6,6 +6,17 @@ const phrases = [
 ]
 let phraseIndex = 0
 
+const loadImage = async () => {
+    let blob = await fetch("https://example.com/image.png").then(r => r.blob());
+    let dataUrl = await new Promise(resolve => {
+      let reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.readAsDataURL(blob);
+    });
+    // now do something with `dataUrl`
+    return dataUrl
+}
+
 document.querySelector('.begin').onclick = () => {
   new Audio('https://cloud-gi6pwmcsl-hack-club-bot.vercel.app/0aaron_smith_-_dancin__krono_remix_-8pm_koguqpm.mp3').play()
 
@@ -14,7 +25,8 @@ document.querySelector('.begin').onclick = () => {
   document.querySelector('body').classList.add('colored-background')
 
   const danceImage = document.createElement('img')
-  danceImage.src = 'https://cloud-fvb9k5nos-hack-club-bot.vercel.app/0ezgif.com-gif-maker.gif'
+  danceImage.src = 'https://cloud-mpvs8batk-hack-club-bot.vercel.app/02x-speed-ezgif.com-gif-maker.gif'
+  // danceImage.src = 'https://cloud-6wq5da4wh-hack-club-bot.vercel.app/0ezgif.com-gif-maker_1_.gif'
   document.querySelector('.container').appendChild(danceImage)
 
   const phraseBox = document.createElement('p')
