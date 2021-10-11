@@ -101,4 +101,5 @@ body {
 img {
   width: 50%;
   animation: transition-in ease-in-out 3s;
+  cursor: pointer;
 }
