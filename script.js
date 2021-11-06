@@ -6,7 +6,7 @@ const phrases = [
 ]
 let phraseIndex = 0
 
-document.querySelector('.begin').onclick = () => {
+const start = () => {
   const audio = document.createElement('audio')
   audio.src = 'https://cloud-gi6pwmcsl-hack-club-bot.vercel.app/0aaron_smith_-_dancin__krono_remix_-8pm_koguqpm.mp3'
   audio.loop = true
@@ -45,3 +45,10 @@ const updatePhrase = () => {
   phraseIndex = (phraseIndex + 1) % phrases.length
   document.querySelector('.phrase-box').innerText = phrases[phraseIndex]
 }
+
+document.onload = () => {
+  if (window.location.hash != '') {
+    start
+  }
+}
+document.querySelector('.begin').onclick = start
